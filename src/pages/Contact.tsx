@@ -236,7 +236,15 @@ const Contact = () => {
                       <FormItem>
                         <FormLabel>Approx. nightly budget (USD)</FormLabel>
                         <FormControl>
-                          <Input type="number" min={1} placeholder="e.g., 250" value={field.value as any ?? ""} onChange={field.onChange} />
+                          <Input
+                            type="number"
+                            min={1}
+                            placeholder="e.g., 250"
+                            value={field.value === undefined ? "" : field.value}
+                            onChange={(e) =>
+                              field.onChange(e.target.value === "" ? "" : Number(e.target.value))
+                            }
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
