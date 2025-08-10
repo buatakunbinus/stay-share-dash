@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -13,6 +14,8 @@ const NavBar = () => {
           <Link to="/" className="hover:opacity-80 transition-opacity">Stays</Link>
           <a href="#experiences" className="hover:opacity-80 transition-opacity">Experiences</a>
           <a href="#host" className="hover:opacity-80 transition-opacity">Become a Host</a>
+          <Link to="/contact" className="hover:opacity-80 transition-opacity">Contact</Link>
+          <Link to="/rating" className="hover:opacity-80 transition-opacity">Rating</Link>
         </nav>
         <div className="flex items-center gap-3">
           <Button variant="ghost" className="hidden sm:inline-flex">Log in</Button>
