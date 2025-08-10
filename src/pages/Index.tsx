@@ -1,6 +1,7 @@
 import HeroSearch from "@/components/HeroSearch";
 import ListingCard from "@/components/ListingCard";
 import { listings } from "@/data/listings";
+import Testimonials from "@/components/Testimonials";
 
 const Index = () => {
   const jsonLd = {
@@ -30,6 +31,8 @@ const Index = () => {
           ))}
         </div>
       </section>
+
+      <Testimonials />
 
       <script
         type="application/ld+json"

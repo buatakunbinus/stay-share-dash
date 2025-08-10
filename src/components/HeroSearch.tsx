@@ -38,7 +38,7 @@ const HeroSearch: React.FC = () => {
         </div>
       </div>
 
-      <Card className="-mt-8 mx-auto max-w-5xl shadow-xl animate-enter">
+      <Card className="mt-6 mx-auto max-w-5xl shadow-xl animate-enter">
         <CardContent className="p-4 md:p-6">
           <form onSubmit={onSearch} className="grid grid-cols-1 gap-3 md:grid-cols-5">
             <div className="md:col-span-2">
